@@ -1,0 +1,37 @@
+h2+p{
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 40px;
+}
+
+#consejo{
+    background-color: #ACA759;
+    color:#3b0653;
+    font-family: "Times New Roman" ;
+}
+#textolinea{
+    text-decoration: underline;
+    background-color: darksalmon;
+    color: #3b0653;
+    font-variant: all-small-caps;
+    text-transform: capitalize;
+}
+
+h3{
+    background-color: #895F38;
+    font-weight: bold;
+    color: white;
+
+}
+
+.clase{
+    font-style: italic;
+    color: #563473;
+    font-weight: bold;
+}
+
+#idparaestilo{
+    font-family: "Tw Cen MT";
+    background-color: #755E8B;
+    color: white;
+}
