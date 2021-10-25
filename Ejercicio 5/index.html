@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+
+        .contenedor1{
+            /* background-color: rgb(211, 161, 101); */
+            background-color: grey;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 45em;
+            height: 5em ;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            
+        }
+
+        .contenedor1>div{
+            background-color: rgb(211, 161, 101); 
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            width: 7.5rem;
+            height: 3rem;
+            border: solid black 1px;
+
+        }
+
+        .contenedor1 > :nth-child(1){
+            order: 4;
+        }
+        .contenedor1 > :nth-child(2){
+            order: 1;
+        }
+        .contenedor1 > :nth-child(3){
+            order: 2;
+            flex-grow: 2.5;
+        }
+        .contenedor1 > :nth-child(4){
+            order: 3;
+            flex-grow: 6;
+        }
+
+        .contenedor2{
+            /* background-color: rgb(211, 161, 101); */
+            background-color: #00ffdd;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 45rem;
+            height: 12rem ;
+            /* flex-basis: 100%; */
+            padding-left: 1rem;
+            padding-right: 1rem;
+            
+        }
+
+        .contenedor2>div{
+            background-color: rgb(211, 161, 101); 
+            display: flex;
+            /* justify-content: center; */
+            align-items: flex-start;
+            width: 7.5rem;
+            height: 10rem;
+            border: solid black 1px;
+            
+        }
+
+        .contenedor2 > div:nth-child(2){
+            flex-grow: 5;
+        }
+            /* flex-basis: 100%;
+        
+
+        .contenedor2 > div:nth-child(1){
+            flex-shrink: 50%;
+        }
+        
+        .contenedor2 > div:nth-child(3){
+            flex-shrink: 50%;
+        } */
+    </style>
+</head>
+<body>
+    <div class="contenedor1">
+        <div>Primero</div>
+        <div>Segundo</div>
+        <div>Tercero</div>
+        <div>Cuarto</div>
+    </div>
+<br> <br> <br>
+    <div class="contenedor2">
+        <div>Primero</div>
+        <div>Segundo</div>
+        <div>Tercero</div>
+    </div>
+    
+</body>
+</html>
