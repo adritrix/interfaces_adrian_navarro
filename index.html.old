@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgb(252, 211, 196);
+        }
+
+        #contenedorPrimario1{
+            /* display: flex;
+            flex-direction: row;
+            align-items: center; */
+        }
+        
+        .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+}
+        
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover{
+            font-style: italic;
+            text-decoration: none;
+            color: white;
+        }
+
+        a.activo{
+            /* background-color: black;
+            color: orangered; */
+            color: white;
+        }
+
+        #contenedorPrimario1 input[type=text] {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 17px;
+        }
+
+
+        .contenedoresPrimarios{
+            background-color: orangered;
+            border: 2px solid black;
+            margin: 1em;
+        }
+    </style>
+
+    <script src='main.js'></script>
+</head>
+
+
+
+<body>
+    <div id="contenedorPrimario1" class="contenedoresPrimarios">
+        <a class="activo" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <input type="text" placeholder="Search..">
+            
+        </nav>
+          
+        
+    </div>
+
+    <div class="contenedoresPrimarios">
+
+    </div>
+
+    <div class="contenedoresPrimarios">
+
+    </div>
+</body>
+</html>

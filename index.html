@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Makinas Sin Fronteras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgb(252, 211, 196);
+        }
+        
+        
+
+        nav.menu {
+            /* padding-right: 1em;
+            padding-left: 1em; */
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav input[type=text] {
+                border: 1px solid #ccc;  
+            } */
+            nav.menu {
+            flex-direction: column;
+            }
+        }
+        nav>a{
+            color: black;
+            text-decoration: none;
+        }
+
+        nav>a:hover{
+            font-style: italic;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav>a.activo{
+            /* background-color: black;
+            color: orangered; */
+            color: white;
+        }
+
+        .barraBusqueda{
+            float: right;
+            border: none;
+            font-size: 17px;
+        }
+
+
+        .contenedoresPrimarios{
+            background-color: orangered;
+            border: 2px solid black;
+            margin: 1em;
+        }
+    </style>
+
+    <script src='main.js'></script>
+</head>
+
+
+
+<body>
+    <div class="contenedoresPrimarios">
+        <nav class="menu">
+            <a class="menu" href="default.asp">Inicio</a>
+            <a class="menu" href="news.asp">¿Quienes somos?</a>
+            <a class="menu" href="contact.asp">¿Como colaborar?</a>
+            <a class="menu activo" href="about.asp">Area Privada</a>
+            <a class="menu" href="about.asp">Dona</a>
+            <a class="menu" href="about.asp">Concto</a>
+            <input class="barraBusqueda" type="text" placeholder="Search..">
+        </nav>
+          
+        
+    </div>
+
+    <div class="contenedoresPrimarios">
+
+    </div>
+
+    <div class="contenedoresPrimarios">
+
+    </div>
+</body>
+</html>
