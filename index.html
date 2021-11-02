@@ -47,6 +47,7 @@
             nav.menu {
             flex-direction: column;
             }
+
         }
         nav>a{
             color: black;
@@ -71,6 +72,8 @@
             font-size: 17px;
         }
 
+/* ########################################################################################### */
+
         #contenedorPrimario2{
             background-color: rgb(252, 211, 196);
             display: flex;
@@ -83,7 +86,7 @@
         }
 
         .areaPersonal{
-            /* background-color: purple; */
+             background-color: wheat; 
             /* width: 43rem;
             height: 43rem; */
             width: 38rem;
@@ -92,27 +95,128 @@
             border: 1px solid black;
         }
 
+        .areaPersonalTitulos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 3px solid rgb(104, 104, 180);
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        #perfil{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #pfp{
+            width: 38%;
+            height: 38%;
+        }
+
+        #pfp>img {
+           width: 100%;
+           height: 100%;
+        }
+
+        /* #perfil>div:nth-child(1){
+            flex-grow: 1;
+        }
+        #perfil>div:nth-child(2){
+            flex-grow: 4;
+        }*/
+        #perfil>div:nth-child(3){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        } 
+
+
+
+        @media screen and (max-width: 850px) {
+            .areaPersonal{
+            width: 30rem;
+        }
+
+        }
+
+
+/* ########################################################################################### */
+
+
         #contenedorPrimario3{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
-        }
-        #contenedorPrimario3>div{
-            
         }
 
         #contenedorPrimario3>div:nth-child(1){
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-shrink: 1;
         }
+
         #contenedorPrimario3>div:nth-child(2){
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+            flex-shrink: 4;
         }
-        #contenedorPrimario3>div:nth-child(3){
 
+        /* #contenedorPrimario3>div:nth-child(3){
+            flex-shrink: 1;
+        } */
+
+        #pieTexto_titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 3px solid rgb(104, 104, 180);
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-bottom: 1rem;
         }
-
         
+
+        #pieTexto_info{
+           
+        }
+
+        #pieMaps{
+            width: 33%;
+        }
+
+        iframe{
+           width: 100%; 
+        }
+
+
+        @media screen and (max-width: 1400px) {
+            #contenedorPrimario3{
+                flex-direction: column;
+            }
+
+            #pieMaps{
+            width: 100%;
+        }
+        }
+
+        @media screen and (max-width: 603px) {
+            #contenedorPrimario3>div:nth-child(1){
+            flex-wrap: wrap;
+            }
+        }
     </style>
 
     <script src='main.js'></script>
@@ -134,18 +238,38 @@
     </div>
 
     <div id="contenedorPrimario2" class="contenedoresPrimarios">
-        <div id="perfil" class="areaPersonal"></div>
-        <div id="proyectos" class="areaPersonal"></div>
-        <div id="amigos" class="areaPersonal"></div>
-        <div id="donaciones" class="areaPersonal"></div>
+        <div id="contenedorPrimario2_1">
+            <div id="perfil" class="areaPersonal">
+                <div class="areaPersonalTitulos">Perfil de usuario</div>
+                <div id="pfp"> <img src="Perfil5.png" alt=""></div>
+                <div id="perfilInfo">orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            </div>
+            <div id="amigos" class="areaPersonal"></div>
+        </div>
+        <div id="contenedorPrimario2_2">
+            <div id="proyectos" class="areaPersonal"></div>
+            <div id="donaciones" class="areaPersonal"></div>
+        </div>
+        
     </div>
 
     <div id="contenedorPrimario3" class="contenedoresPrimarios">
-        <div id="pieFotos" class="piePagina"></div>
-        <div id="pieTexto" class="piePagina"></div>
-        <div id="pieMaps" class="piePagina"><div class="mapouter"><div class="gmap_canvas">
-            <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ies clara&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe><a href="https://www.fnfgo.com/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:25em;height:10em;}.gmap_canvas {overflow:hidden;background:none!important;width:25em;height:10em;}.gmap_iframe {width:25em!important;height:25em!important;}</style></div></div>
+        <div id="pieFotos" class="piePagina">
+            <div id="foto1" class="fotos"><img src="Perfil1.png" alt="Imagen no carcada"></div>
+            <div id="foto2" class="fotos"><img src="Perfil2.png" alt="Imagen no carcada"></div>
+            <div id="foto3" class="fotos"><img src="Perfil3.png" alt="Imagen no carcada"></div>
+            <div id="foto4" class="fotos"><img src="Perfil4.png" alt="Imagen no carcada"></div>
+        </div>
+        <div id="pieTexto" class="piePagina">
+            <div id="pieTexto_titulo">Direccion oficina centraal</div>
+            <div id="pieTexto_info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+                only five centuries, but also the leap into electronic tyLorem Ipsum</div>
+        </div>
+        <div id="pieMaps" class="piePagina">
+            <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=600&amp;
+            hl=en&amp;q=ies clara&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe></div>
     </div>
 </body>
 </html>
