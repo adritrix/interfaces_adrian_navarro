@@ -6,220 +6,9 @@
     <title>Makinas Sin Fronteras</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background-color: rgb(252, 211, 196);
-        }
-
-        #contenedorPrimario1{
-            position: sticky;
-            top: 0px;
-        }
-        
-        .contenedoresPrimarios{
-            background-color: orangered;
-            border: 2px solid black;
-            margin: 1em;
-        }
-
-        nav.menu {
-            /* padding-right: 1em;
-            padding-left: 1em; */
-            padding-top: 0.25em;
-            padding-bottom: 0.25em;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-
-
-        }
-        
-        @media screen and (max-width: 600px) {
-            /* .barraBusqueda input[type=text] {
-                border: 1px solid rgb(0, 0, 0);  
-            }  */
-            nav.menu {
-            flex-direction: column;
-            }
-
-        }
-        nav>a{
-            color: black;
-            text-decoration: none;
-        }
-
-        nav>a:hover{
-            font-style: italic;
-            text-decoration: none;
-            color: white;
-        }
-
-        nav>a.activo{
-            /* background-color: black;
-            color: orangered; */
-            color: white;
-        }
-
-        .barraBusqueda{
-            float: right;
-            border: none;
-            font-size: 17px;
-        }
-
-/* ########################################################################################### */
-
-        #contenedorPrimario2{
-            background-color: rgb(252, 211, 196);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            border: 0ch;
-
-        }
-
-        .areaPersonal{
-             background-color: wheat; 
-            /* width: 43rem;
-            height: 43rem; */
-            width: 38rem;
-            height: 38rem;
-            margin-top: 2rem;
-            border: 1px solid black;
-        }
-
-        .areaPersonalTitulos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            border: 3px solid rgb(104, 104, 180);
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            margin-bottom: 1rem;
-            font-size: 3rem;
-        }
-
-        #perfil{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        #pfp{
-            width: 38%;
-            height: 38%;
-        }
-
-        #pfp>img {
-           width: 100%;
-           height: 100%;
-        }
-
-        /* #perfil>div:nth-child(1){
-            flex-grow: 1;
-        }
-        #perfil>div:nth-child(2){
-            flex-grow: 4;
-        }*/
-        #perfil>div:nth-child(3){
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-        } 
-
-
-
-        @media screen and (max-width: 850px) {
-            .areaPersonal{
-            width: 30rem;
-        }
-
-        }
-
-
-/* ########################################################################################### */
-
-
-        #contenedorPrimario3{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        #contenedorPrimario3>div:nth-child(1){
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            flex-shrink: 1;
-        }
-
-        #contenedorPrimario3>div:nth-child(2){
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            margin: 1rem;
-            flex-shrink: 4;
-        }
-
-        /* #contenedorPrimario3>div:nth-child(3){
-            flex-shrink: 1;
-        } */
-
-        #pieTexto_titulo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            border: 3px solid rgb(104, 104, 180);
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            margin-bottom: 1rem;
-        }
-        
-
-        #pieTexto_info{
-           
-        }
-
-        #pieMaps{
-            width: 33%;
-        }
-
-        iframe{
-           width: 100%; 
-        }
-
-
-        @media screen and (max-width: 1400px) {
-            #contenedorPrimario3{
-                flex-direction: column;
-            }
-
-            #pieMaps{
-            width: 100%;
-        }
-        }
-
-        @media screen and (max-width: 603px) {
-            #contenedorPrimario3>div:nth-child(1){
-            flex-wrap: wrap;
-            }
-        }
-    </style>
-
-    <script src='main.js'></script>
+    <script src='main.js'>
+     
+    </script>
 </head>
 
 
@@ -241,14 +30,101 @@
         <div id="contenedorPrimario2_1">
             <div id="perfil" class="areaPersonal">
                 <div class="areaPersonalTitulos">Perfil de usuario</div>
-                <div id="pfp"> <img src="Perfil5.png" alt=""></div>
+                <div id="pfp"> <img src="Perfil5.png" alt="Imagen no cargada"></div>
                 <div id="perfilInfo">orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
             </div>
-            <div id="amigos" class="areaPersonal"></div>
+            <div id="amigos" class="areaPersonal">
+                <div class="areaPersonalTitulos">Amigos</div>
+                <div id="nAmigos">
+                    <div class="nAmigos"><div><img class="imagenAmigos" src="Perfil8.png" alt="Imagen no cargada"></div> <div>Fernanda Rodigez Gonzales</div> </div>
+                    <div class="nAmigos"><div><img class="imagenAmigos" src="Perfil9.png" alt="Imagen no cargada"></div> <div>Pablo Chacon Exposito</div> </div>
+                    <div class="nAmigos"><div><img class="imagenAmigos" src="Perfil10.png" alt="Imagen no cargada"></div> <div>Feleipe Perez Gutierrez</div> </div>
+                    <div class="nAmigos"><div><img class="imagenAmigos" src="Perfil7.png" alt="Imagen no cargada"></div> <div>Alfredo Fernandez Navarro</div> </div>
+                    <div class="nAmigos"><div><img class="imagenAmigos" src="Perfil1.png" alt="Imagen no cargada"></div> <div>Jose Hernandez Fuerte</div> </div>
+                </div>
+                
+            </div>
         </div>
         <div id="contenedorPrimario2_2">
-            <div id="proyectos" class="areaPersonal"></div>
-            <div id="donaciones" class="areaPersonal"></div>
+            <div id="proyectos" class="areaPersonal">
+                <div class="areaPersonalTitulos">Proyectos</div>
+                <div id="proyectosCaja">
+                    <div id="proyectosBotones"> <!-- Aqui me he quedado  -->
+                        <div>
+                            <input type="radio" id="html" name="Selector Proyecto" value="HTML">
+                            <label for="html">HTML</label><br>
+                        </div> 
+                        <div>
+                            <input type="radio" id="css" name="Selector Proyecto" value="CSS">
+                            <label for="css">CSS</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="javascript" name="Selector Proyecto" value="JavaScript">
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="php" name="Selector Proyecto" value="PhP">
+                            <label for="php">PhP</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="C++" name="Selector Proyecto" value="C++">
+                            <label for="C++">C++</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="SQL" name="Selector Proyecto" value="SQL">
+                            <label for="SQL">SQL</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Shell" name="Selector Proyecto" value="Shell">
+                            <label for="Shell">Shell</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="---" name="Selector Proyecto" value="---">
+                            <label for="---">---</label>
+                        </div>
+                    </div>
+                    <div id="proyectosInfo"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="donaciones" class="areaPersonal">
+                <div class="areaPersonalTitulos">Donaciones</div>
+                <div><a href="https://www.caritas.es/">DONA</a></div>
+                <div>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</div>
+            </div>
         </div>
         
     </div>
