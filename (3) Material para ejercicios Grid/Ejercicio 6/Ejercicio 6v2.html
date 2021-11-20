@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio de grid-column y grid-row</title>
+	<link rel="stylesheet" type="text/css" href="Ejercicio 6.css">
+	<style>
+		
 .box {
 	background-color: #444;
 	color: #fff;
@@ -30,7 +39,7 @@
 
 .b{
 	grid-row: 1;
-	grid-column: 4;
+	grid-column: 3/span 2;
 }
 
 .c{
@@ -50,5 +59,20 @@
 
 .f{
 	grid-row: 3;
-	grid-column: 3;
+	grid-column: 2/span 3;
 }
+	</style>
+</head>
+
+<body>
+    <div class="wrapper">
+		<div class="box a">A</div>
+		<div class="box b">B</div>
+		<div class="box c">C</div>
+		<div class="box d">D</div>
+		<div class="box e">E</div>
+		<div class="box f">F</div>
+    </div>
+</body>
+
+</html>
