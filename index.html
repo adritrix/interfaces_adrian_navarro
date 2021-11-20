@@ -19,11 +19,30 @@
 
         gtag('config', 'G-GNH7N4D8PV');
     </script>
+    <script>
+        function openNav() {
+          document.getElementById("contenedorPrimario1B").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("contenedorPrimario1B").style.width = "0";
+        }
+        </script>
 </head>
 
 
 
 <body>
+    <div id="contenedorPrimario1B" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sidenavMenu" href="default.asp">Inicio</a>
+        <a class="sidenavMenu" href="news.asp">¿Quienes somos?</a>
+        <a class="sidenavMenu" href="contact.asp">¿Como colaborar?</a>
+        <a class="sidenavMenu activo" href="about.asp">Area Privada</a>
+        <a class="sidenavMenu" href="about.asp">Dona</a>
+        <a class="sidenavMenu" href="about.asp">Concto</a>
+    </div>
+    <span id="botonSidenav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     <div id="contenedorPrimario1" class="contenedoresPrimarios">
         <nav class="menu">
             <a class="menu" href="default.asp">Inicio</a>
