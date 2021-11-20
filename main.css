@@ -39,7 +39,7 @@ nav.menu {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1165px) {
     /* .barraBusqueda input[type=text] {
         border: 1px solid rgb(0, 0, 0);  
     }  */
@@ -302,6 +302,11 @@ nav>a.activo{
 
 }
 
+/* @media screen and (max-width: 768px){
+    *{
+        transform: scale(0.5);
+    }
+} */
 
 /* ########################################################################################### */
 
