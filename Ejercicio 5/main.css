@@ -1,0 +1,30 @@
+.letreros{
+    display: none;
+}
+
+#letrero1{
+    background-color: yellow;
+}
+
+#letrero2{
+    background-color: purple;
+}
+
+#letrero3{
+    background-color: red;
+}
+
+#letrero4{
+    background-color: green;
+}
+
+#letrero5{
+    background-color: grey;
+}
+
+#contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
