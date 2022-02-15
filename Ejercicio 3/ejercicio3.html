@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+    <script>
+        window.onload=function(){
+        document.getElementById('pausa').onclick= function (){
+            document.getElementById('sonido').pause();
+        }
+        document.getElementById('play').onclick= function (){
+            document.getElementById('sonido').play();
+        }
+        document.getElementById('vulumen +').onclick= function (){
+            document.getElementById('sonido').muted=false;
+            document.getElementById('sonido').volume=document.getElementById('sonido').volume+0.1;
+        }
+        document.getElementById('volumen -').onclick= function (){
+            document.getElementById('sonido').muted=false;
+            document.getElementById('sonido').volume=document.getElementById('sonido').volume-0.1;
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <audio id="sonido" controls preload autoplay muted>
+        <source src="bury the light.mp3" type="audio/mpeg">
+        <source src="bury the light.ogg" type="audio/ogg">
+    </audio>
+    <button id="pausa">pausa</button>
+    <button id="play">play</button>
+    <button id="vulumen +">volumen +</button>
+    <button id="volumen -">volumen -</button>
+    
+</body>
+</html>
