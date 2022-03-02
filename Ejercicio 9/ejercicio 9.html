@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ejercicio 9</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<style>
+    #jajas {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 10rem;
+        left: 0%;
+        animation-name: pixar;
+        animation-delay: 2s;
+        animation-duration: 4s;
+    }
+
+    @keyframes pixar {
+        0% {
+            top: 10rem;
+            left: 0%;
+        }
+
+        20% {
+            transform: rotate(90deg);
+        }
+
+        40% {
+            transform: rotate(180deg);
+        }
+
+        80% {
+            transform: rotate(270deg);
+        }
+
+        100% {
+            top: 10rem;
+            left: 85%;
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <h1 id="jajas">Titulo ejercicio 9</h1>
+</body>
+
+</html>

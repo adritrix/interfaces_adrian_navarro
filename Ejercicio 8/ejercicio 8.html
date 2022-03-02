@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 8</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+        }
+        .jajas{
+            /* background-image: url(dvd.png); */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 10rem;
+            width: 10rem;
+            position: relative;
+            top: 75%;
+            left: 90%;
+            animation: pixar 16s infinite;
+        }
+        @keyframes pixar {
+            0%{
+                top: 0%;
+                left: 0%;
+            }
+            
+            25%{
+                top: 75%;
+                left: 90%;
+            }
+
+            50%{
+                top: 0%;
+                left: 90%;
+            }
+
+            75%{
+                top: 70%;
+                left: 0%;
+            }
+
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+        img{
+            width: 10rem;
+            height: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="jaja" class="jajas"><img src="dvd.png" alt=""></div>
+</body>
+</html>
